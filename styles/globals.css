@@ -1,0 +1,87 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+}
+
+.pagination_style {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: right;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #0000004a;
+}
+
+.empty_cart_wrapper>a {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background: #e5e5e5;
+  font-weight: 300;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.empty_cart_wrapper>.empty_cart {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-top: 4px solid #e5e5e5;
+  background: #f4f4f4;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.cart_group {
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  top: -5px;
+  right: -13px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+.error-msg {
+	color: #e15554 !important;
+	font-size: 0.75rem !important;
+	font-weight: 200 !important;
+	font-style: normal;
+}
