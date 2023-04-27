@@ -15,6 +15,13 @@ const useGetTopProductsQuery = () => {
   );
 };
 
+const useDeleteProductQuery = () => {
+  const mutation = useMutation((id) =>
+    axios.delete(`${baseURL}/ecommerce/product/single?id=${id}`)
+  );
+  return mutation;
+};
+
 const useUploadProductImage = () => {
   const mutation = useMutation((requestData) =>
     axios.post(`${baseURL}/ecommerce/product/upload-image`, requestData)
@@ -31,4 +38,9 @@ const useCreateProduct = () => {
   return mutation;
 };
 
-export { useGetTopProductsQuery, useUploadProductImage, useCreateProduct };
+export {
+  useGetTopProductsQuery,
+  useDeleteProductQuery,
+  useUploadProductImage,
+  useCreateProduct,
+};
